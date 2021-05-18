@@ -1,5 +1,6 @@
-##Projek-Sisdat 1
-Judul Aplikasi : Aplikasi RedelgiKu
+**Projek-Sisdat 1**
+
+#Judul Aplikasi : Aplikasi RedelgiKu
 
 Kelompok 6
 Nama Anggota :
