@@ -39,7 +39,7 @@ Public Class Nilai
         TextBox8.Text = ""
         TextBox6.Text = ""
         TextBox3.MaxLength = 10
-        TextBox4.MaxLength = 3
+        TextBox4.MaxLength = 10
         TextBox7.MaxLength = 3
         TextBox8.MaxLength = 3
         TextBox6.MaxLength = 3

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class murid
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,9 +20,9 @@ Partial Class murid
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Murid))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(murid))
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -65,7 +65,7 @@ Partial Class murid
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(83, 29)
         Me.Button4.TabIndex = 32
-        Me.Button4.Text = "DELETE"
+        Me.Button4.Text = "CLOSE"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button3
@@ -75,7 +75,7 @@ Partial Class murid
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(83, 29)
         Me.Button3.TabIndex = 31
-        Me.Button3.Text = "UPDATE"
+        Me.Button3.Text = "DELETE"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button2
@@ -85,7 +85,7 @@ Partial Class murid
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(83, 29)
         Me.Button2.TabIndex = 29
-        Me.Button2.Text = "READ"
+        Me.Button2.Text = "UPDATE"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
@@ -339,7 +339,7 @@ Partial Class murid
         Me.TextBox13.Size = New System.Drawing.Size(189, 22)
         Me.TextBox13.TabIndex = 46
         '
-        'Murid
+        'murid
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -375,7 +375,8 @@ Partial Class murid
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Name = "Murid"
+        Me.Name = "murid"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form4"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

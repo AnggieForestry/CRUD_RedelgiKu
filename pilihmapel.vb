@@ -28,10 +28,10 @@ Public Class pilihmapel
         Button1.Enabled = True
         Button3.Enabled = True
         Button4.Enabled = True
-        Da = New OdbcDataAdapter("Select * From murid", Conn)
+        Da = New OdbcDataAdapter("Select * From pilihmapel", Conn)
         Ds = New DataSet
-        Da.Fill(Ds, "murid")
-        DataGridView1.DataSource = Ds.Tables("murid")
+        Da.Fill(Ds, "pilihmapel")
+        DataGridView1.DataSource = Ds.Tables("pilihmapel")
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -39,7 +39,7 @@ Public Class pilihmapel
             MsgBox("Pastikan semua Field terisi !")
         Else
             Call Koneksi()
-            Dim InputData As String = "INSERT INTO murid VALUES ('" & TextBox3.Text & "','" & TextBox4.Text & "')"
+            Dim InputData As String = "INSERT INTO pilihmapel VALUES ('" & TextBox4.Text & "','" & TextBox3.Text & "')"
             Cmd = New OdbcCommand(InputData, Conn)
             Cmd.ExecuteNonQuery()
             MsgBox("Input Data Berhasil")
@@ -54,7 +54,7 @@ Public Class pilihmapel
             MsgBox("Pastikan data yang akan dihapus terisi !")
         Else
             Call Koneksi()
-            Dim HapusData As String = "DELETE FROM murid WHERE ID_Murid= '" & TextBox4.Text & "' AND ID_Mapel= '" & TextBox3.Text & "'"
+            Dim HapusData As String = "DELETE FROM pilihmapel WHERE ID_Murid= '" & TextBox3.Text & "' AND ID_Mapel= '" & TextBox4.Text & "'"
             Cmd = New OdbcCommand(HapusData, Conn)
             Cmd.ExecuteNonQuery()
             MsgBox("Hapus Data Berhasil")

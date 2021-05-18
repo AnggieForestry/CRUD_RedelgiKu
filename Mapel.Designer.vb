@@ -256,6 +256,7 @@ Partial Class Mapel
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox1)
         Me.Name = "Mapel"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Mapel"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()

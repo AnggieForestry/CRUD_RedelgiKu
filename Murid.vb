@@ -47,7 +47,7 @@ Public Class murid
             MsgBox("Pastikan semua Field terisi !")
         Else
             Call Koneksi()
-            Dim InputData As String = "INSERT INTO murid VALUES ('" & TextBox3.Text & "','" & TextBox4.Text & "','" & TextBox7.Text & "','" & TextBox6.Text & "','" & TextBox8.Text & "','" & TextBox9.Text & "','" & TextBox10.Text & "','" & TextBox13.Text & "','" & TextBox12.Text & "')"
+            Dim InputData As String = "INSERT INTO murid VALUES ('" & TextBox3.Text & "','" & TextBox6.Text & "','" & TextBox12.Text & "','" & TextBox8.Text & "','" & TextBox9.Text & "','" & TextBox10.Text & "','" & TextBox13.Text & "','" & TextBox7.Text & "','" & TextBox4.Text & "')"
             Cmd = New OdbcCommand(InputData, Conn)
             Cmd.ExecuteNonQuery()
             MsgBox("Input Data Berhasil")
