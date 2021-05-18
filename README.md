@@ -1,8 +1,6 @@
-**Projek-Sisdat 1**
-
-.#Judul Aplikasi : Aplikasi RedelgiKu
-
+## Judul Aplikasi : Aplikasi RedelgiKu
 Kelompok 6
+
 Nama Anggota :
 
 1. 140810200008 - ANGGIE FORESTRY
