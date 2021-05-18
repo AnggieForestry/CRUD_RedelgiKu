@@ -66,7 +66,7 @@ Public Class Gaji
             MsgBox("Pastikan semua Field terisi !")
         Else
             Call Koneksi()
-            Dim InputData As String = "INSERT INTO gaji VALUES ('" & TextBox2.Text & "','" & TextBox4.Text & "','" & TextBox7.Text & "','" & TextBox9.Text & "')"
+            Dim InputData As String = "INSERT INTO gaji VALUES ('" & TextBox4.Text & "','" & TextBox2.Text & "','" & TextBox7.Text & "','" & TextBox9.Text & "')"
             Cmd = New OdbcCommand(InputData, Conn)
             Cmd.ExecuteNonQuery()
             MsgBox("Input Data Berhasil")
@@ -92,7 +92,7 @@ Public Class Gaji
             MsgBox("Pastikan data yang akan dihapus terisi !")
         Else
             Call Koneksi()
-            Dim HapusData As String = "DELETE FROM Gaji WHERE Kode_Slip_Gaji= '" & TextBox4.Text & "'"
+            Dim HapusData As String = "DELETE FROM Gaji WHERE Kode_Slip_Gaji= '" & TextBox2.Text & "'"
             Cmd = New OdbcCommand(HapusData, Conn)
             Cmd.ExecuteNonQuery()
             MsgBox("Hapus Data Berhasil")

@@ -81,6 +81,12 @@
       <DependentUpon>DashBoard.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Mapel.Designer.vb">
+      <DependentUpon>Mapel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mapel.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Gaji.Designer.vb">
       <DependentUpon>Gaji.vb</DependentUpon>
     </Compile>
@@ -124,6 +130,9 @@
   <ItemGroup>
     <EmbeddedResource Include="DashBoard.resx">
       <DependentUpon>DashBoard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mapel.resx">
+      <DependentUpon>Mapel.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gaji.resx">
       <DependentUpon>Gaji.vb</DependentUpon>
