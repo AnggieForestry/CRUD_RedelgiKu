@@ -1,5 +1,5 @@
 ﻿Imports System.Data.Odbc
-Public Class Gaji
+Public Class Tagihan
     Dim Conn As OdbcConnection
     Dim Cmd As OdbcCommand
     Dim Ds As DataSet
@@ -11,40 +11,54 @@ Public Class Gaji
         Conn = New OdbcConnection(MyDB)
         If Conn.State = ConnectionState.Closed Then Conn.Open()
     End Sub
+    Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Call KondisiAwal()
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+
+    End Sub
+
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
     End Sub
 
     Sub KondisiAwal()
         Call Koneksi()
-        TextBox2.Text = ""
+        TextBox3.Text = ""
         TextBox4.Text = ""
         TextBox7.Text = ""
-        TextBox9.Text = ""
-        TextBox2.MaxLength = 5
+        TextBox8.Text = ""
+        TextBox6.Text = ""
+        TextBox3.MaxLength = 10
         TextBox4.MaxLength = 10
         TextBox7.MaxLength = 20
-        TextBox9.MaxLength = 20
+        TextBox8.MaxLength = 20
+        TextBox6.MaxLength = 15
         Button1.Text = "CREATE"
         Button2.Text = "UPDATE"
         Button3.Text = "DELETE"
         Button4.Text = "CLOSE"
-        Da = New OdbcDataAdapter("Select * From gaji", Conn)
+        Da = New OdbcDataAdapter("Select * From tagihan", Conn)
         Ds = New DataSet
-        Da.Fill(Ds, "gaji")
-        DataGridView1.DataSource = Ds.Tables("gaji")
-    End Sub
-
-    Private Sub Gaji_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Call KondisiAwal()
+        Da.Fill(Ds, "tagihan")
+        DataGridView1.DataSource = Ds.Tables("tagihan")
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If TextBox2.Text = "" Or TextBox4.Text = "" Or TextBox7.Text = "" Or TextBox9.Text = "" Then
+        If TextBox3.Text = "" Or TextBox4.Text = "" Or TextBox7.Text = "" Or TextBox8.Text = "" Or TextBox6.Text = "" Then
             MsgBox("Pastikan semua Field terisi !")
         Else
             Call Koneksi()
-            Dim InputData As String = "INSERT INTO gaji VALUES ('" & TextBox4.Text & "','" & TextBox2.Text & "','" & TextBox7.Text & "','" & TextBox9.Text & "')"
+            Dim InputData As String = "INSERT INTO tagihan VALUES ('" & TextBox3.Text & "','" & TextBox4.Text & "','" & TextBox7.Text & "','" & TextBox6.Text & "','" & TextBox8.Text & "')"
             Cmd = New OdbcCommand(InputData, Conn)
             Cmd.ExecuteNonQuery()
             MsgBox("Input Data Berhasil")
@@ -53,11 +67,11 @@ Public Class Gaji
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        If TextBox2.Text = "" Or TextBox4.Text = "" Or TextBox7.Text = "" Or TextBox9.Text = "" Then
+        If TextBox3.Text = "" Or TextBox4.Text = "" Or TextBox7.Text = "" Or TextBox8.Text = "" Or TextBox6.Text = "" Then
             MsgBox("Pastikan semua Field terisi !")
         Else
             Call Koneksi()
-            Dim EditData As String = "UPDATE gaji SET Tgl_Gajian='" & TextBox7.Text & "', Total='" & TextBox9.Text & "', ID_Pegawai='" & TextBox2.Text & "' WHERE Kode_Slip_Gaji= '" & TextBox4.Text & "'"
+            Dim EditData As String = "UPDATE tagihan SET Tgl_Pembayaran='" & TextBox7.Text & "', Total='" & TextBox8.Text & "', Ket_Bayar='" & TextBox6.Text & "', ID_Murid='" & TextBox4.Text & "' WHERE No_Kwitansi= '" & TextBox3.Text & "'"
             Cmd = New OdbcCommand(EditData, Conn)
             Cmd.ExecuteNonQuery()
             MsgBox("Input Data Berhasil")
@@ -65,12 +79,15 @@ Public Class Gaji
         End If
     End Sub
 
+
+
+
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        If TextBox2.Text = "" Or TextBox4.Text = "" Or TextBox7.Text = "" Or TextBox9.Text = "" Then
+        If TextBox3.Text = "" Or TextBox4.Text = "" Or TextBox7.Text = "" Or TextBox8.Text = "" Or TextBox6.Text = "" Then
             MsgBox("Pastikan data yang akan dihapus terisi !")
         Else
             Call Koneksi()
-            Dim HapusData As String = "DELETE FROM Gaji WHERE Kode_Slip_Gaji= '" & TextBox2.Text & "'"
+            Dim HapusData As String = "DELETE FROM tagihan WHERE = No_Kwitansi'" & TextBox3.Text & "'"
             Cmd = New OdbcCommand(HapusData, Conn)
             Cmd.ExecuteNonQuery()
             MsgBox("Hapus Data Berhasil")

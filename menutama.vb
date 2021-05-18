@@ -22,4 +22,16 @@
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Mapel.Show()
     End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Tagihan.Show()
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        pilihmapel.Show()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Nilai.Show()
+    End Sub
 End Class

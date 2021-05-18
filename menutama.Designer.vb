@@ -36,6 +36,7 @@ Partial Class menutama
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Button7 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -172,12 +173,23 @@ Partial Class menutama
         Me.TextBox6.TabIndex = 12
         Me.TextBox6.Text = "Created by Group 7 - B 2020"
         '
+        'Button7
+        '
+        Me.Button7.BackColor = System.Drawing.Color.Salmon
+        Me.Button7.Location = New System.Drawing.Point(351, 340)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(115, 42)
+        Me.Button7.TabIndex = 13
+        Me.Button7.Text = "Mapel Pilihan"
+        Me.Button7.UseVisualStyleBackColor = False
+        '
         'menutama
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.PictureBox1)
@@ -212,4 +224,5 @@ Partial Class menutama
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents Button7 As Button
 End Class

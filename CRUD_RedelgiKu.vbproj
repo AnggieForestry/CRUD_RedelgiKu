@@ -81,6 +81,24 @@
       <DependentUpon>DashBoard.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="pilihmapel.Designer.vb">
+      <DependentUpon>pilihmapel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pilihmapel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tagihan.Designer.vb">
+      <DependentUpon>Tagihan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tagihan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nilai.Designer.vb">
+      <DependentUpon>Nilai.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Nilai.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Mapel.Designer.vb">
       <DependentUpon>Mapel.vb</DependentUpon>
     </Compile>
@@ -131,6 +149,9 @@
     <EmbeddedResource Include="DashBoard.resx">
       <DependentUpon>DashBoard.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pilihmapel.resx">
+      <DependentUpon>pilihmapel.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mapel.resx">
       <DependentUpon>Mapel.vb</DependentUpon>
     </EmbeddedResource>
@@ -139,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="menutama.resx">
       <DependentUpon>menutama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nilai.resx">
+      <DependentUpon>Nilai.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pegawai.resx">
       <DependentUpon>Pegawai.vb</DependentUpon>
@@ -152,6 +176,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tagihan.resx">
+      <DependentUpon>Tagihan.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

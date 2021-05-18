@@ -40,13 +40,6 @@ Public Class Pegawai
         TextBox6.Text = ""
         TextBox9.Text = ""
         TextBox10.Text = ""
-        TextBox3.Enabled = False
-        TextBox4.Enabled = False
-        TextBox7.Enabled = False
-        TextBox8.Enabled = False
-        TextBox6.Enabled = False
-        TextBox9.Enabled = False
-        TextBox10.Enabled = False
         TextBox3.MaxLength = 10
         TextBox4.MaxLength = 100
         TextBox7.MaxLength = 10
@@ -58,34 +51,13 @@ Public Class Pegawai
         Button2.Text = "UPDATE"
         Button3.Text = "DELETE"
         Button4.Text = "CLOSE"
-        Button1.Enabled = True
-        Button2.Enabled = True
-        Button3.Enabled = True
-        Button4.Enabled = True
         Da = New OdbcDataAdapter("Select * From pegawai", Conn)
         Ds = New DataSet
         Da.Fill(Ds, "pegawai")
         DataGridView1.DataSource = Ds.Tables("pegawai")
     End Sub
-    Sub FieldAktif()
-        TextBox3.Enabled = True
-        TextBox4.Enabled = True
-        TextBox7.Enabled = True
-        TextBox8.Enabled = True
-        TextBox6.Enabled = True
-        TextBox9.Enabled = True
-        TextBox10.Enabled = True
-        TextBox1.Focus()
-    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If Button1.Text = "CREATE" Then
-            Button1.Text = "CREATE"
-            Button2.Enabled = False
-            Button3.Enabled = False
-            Button4.Text = "CLOSE"
-            Call FieldAktif()
-        End If
         If TextBox3.Text = "" Or TextBox4.Text = "" Or TextBox7.Text = "" Or TextBox6.Text = "" Or TextBox8.Text = "" Or TextBox9.Text = "" Or TextBox10.Text = "" Then
             MsgBox("Pastikan semua Field terisi !")
         Else
