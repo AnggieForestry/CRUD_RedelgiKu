@@ -1,5 +1,6 @@
 ﻿Imports System.Data.Odbc
-Public Class Pegawai
+
+Public Class Murid
     Dim Conn As OdbcConnection
     Dim Cmd As OdbcCommand
     Dim Ds As DataSet
@@ -32,30 +33,30 @@ Public Class Pegawai
     End Sub
 
     Sub KondisiAwal()
-        Call Koneksi()
+        TextBox1.Text = ""
+        TextBox2.Text = ""
         TextBox3.Text = ""
         TextBox4.Text = ""
-        TextBox7.Text = ""
-        TextBox8.Text = ""
+        TextBox5.Text = ""
         TextBox6.Text = ""
-        TextBox9.Text = ""
-        TextBox10.Text = ""
+        TextBox7.Text = ""
         Button1.Text = "CREATE"
         Button2.Text = "READ"
         Button3.Text = "UPDATE"
         Button4.Text = "DELETE"
-        Da = New OdbcDataAdapter("Select * From pegawai", Conn)
+        Call Koneksi()
+        Da = New OdbcDataAdapter("Select * From gaji", Conn)
         Ds = New DataSet
-        Da.Fill(Ds, "pegawai")
-        DataGridView1.DataSource = Ds.Tables("pegawai")
+        Da.Fill(Ds, "gaji")
+        DataGridView1.DataSource = Ds.Tables("gaji")
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If TextBox3.Text = "" Or TextBox4.Text = "" Or TextBox7.Text = "" Or TextBox6.Text = "" Or TextBox8.Text = "" Or TextBox9.Text = "" Or TextBox10.Text = "" Then
+        If TextBox3.Text = "" Or TextBox4.Text = "" Or TextBox6.Text = "" Or TextBox7.Text = "" Or TextBox8.Text = "" Or TextBox9.Text = "" Or TextBox10.Text = "" Then
             MsgBox("Pastikan semua Field terisi !")
         Else
             Call Koneksi()
-            Dim InputData As String = "INSERT INTO pegawai VALUES ('" & TextBox3.Text & "','" & TextBox4.Text & "','" & TextBox7.Text & "','" & TextBox6.Text & "','" & TextBox8.Text & "','" & TextBox9.Text & "','" & TextBox10.Text & "')"
+            Dim InputData As String = "INSERT INTO gaji VALUES ('" & TextBox3.Text & "','" & TextBox4.Text & "','" & TextBox6.Text & "','" & TextBox7.Text & "','" & TextBox8.Text & "',," & TextBox9.Text & "','" & TextBox10.Text & "')"
             Cmd = New OdbcCommand(InputData, Conn)
             Cmd.ExecuteNonQuery()
             MsgBox("Input Data Berhasil")

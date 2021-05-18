@@ -53,6 +53,7 @@
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -73,17 +74,29 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="DashBoard.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="DashBoard.Designer.vb">
+      <DependentUpon>DashBoard.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <Compile Include="Gaji.Designer.vb">
+      <DependentUpon>Gaji.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form2.vb">
+    <Compile Include="Gaji.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menutama.Designer.vb">
+      <DependentUpon>menutama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="menutama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pegawai2.Designer.vb">
+      <DependentUpon>Pegawai2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pegawai2.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Pegawai.Designer.vb">
@@ -92,10 +105,10 @@
     <Compile Include="Pegawai.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.vb">
-      <DependentUpon>Form4.vb</DependentUpon>
+    <Compile Include="Murid.Designer.vb">
+      <DependentUpon>Murid.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form4.vb">
+    <Compile Include="Murid.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -115,23 +128,30 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="DashBoard.resx">
+      <DependentUpon>DashBoard.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <EmbeddedResource Include="Gaji.resx">
+      <DependentUpon>Gaji.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menutama.resx">
+      <DependentUpon>menutama.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pegawai.resx">
       <DependentUpon>Pegawai.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.vb</DependentUpon>
+    <EmbeddedResource Include="Murid.resx">
+      <DependentUpon>Murid.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pegawai2.resx">
+      <DependentUpon>Pegawai2.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

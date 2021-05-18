@@ -47,9 +47,11 @@ Partial Class Pegawai
         Me.Button4 = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
@@ -87,7 +89,7 @@ Partial Class Pegawai
         '
         Me.Label1.BackColor = System.Drawing.Color.LightSkyBlue
         Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label1.Location = New System.Drawing.Point(49, 89)
+        Me.Label1.Location = New System.Drawing.Point(161, 89)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(97, 19)
         Me.Label1.TabIndex = 13
@@ -97,7 +99,7 @@ Partial Class Pegawai
         '
         Me.Label2.BackColor = System.Drawing.Color.LightSkyBlue
         Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label2.Location = New System.Drawing.Point(49, 112)
+        Me.Label2.Location = New System.Drawing.Point(161, 112)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(97, 19)
         Me.Label2.TabIndex = 14
@@ -107,7 +109,7 @@ Partial Class Pegawai
         '
         Me.Label3.BackColor = System.Drawing.Color.LightSkyBlue
         Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label3.Location = New System.Drawing.Point(409, 134)
+        Me.Label3.Location = New System.Drawing.Point(462, 134)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(98, 19)
         Me.Label3.TabIndex = 15
@@ -117,7 +119,7 @@ Partial Class Pegawai
         '
         Me.Label4.BackColor = System.Drawing.Color.LightSkyBlue
         Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label4.Location = New System.Drawing.Point(49, 158)
+        Me.Label4.Location = New System.Drawing.Point(160, 159)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(98, 19)
         Me.Label4.TabIndex = 16
@@ -128,7 +130,7 @@ Partial Class Pegawai
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.LightSkyBlue
         Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label5.Location = New System.Drawing.Point(409, 88)
+        Me.Label5.Location = New System.Drawing.Point(463, 88)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(98, 19)
         Me.Label5.TabIndex = 17
@@ -138,7 +140,7 @@ Partial Class Pegawai
         '
         Me.Label6.BackColor = System.Drawing.Color.LightSkyBlue
         Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label6.Location = New System.Drawing.Point(409, 111)
+        Me.Label6.Location = New System.Drawing.Point(462, 111)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(98, 19)
         Me.Label6.TabIndex = 18
@@ -149,7 +151,7 @@ Partial Class Pegawai
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.LightSkyBlue
         Me.Label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label7.Location = New System.Drawing.Point(49, 135)
+        Me.Label7.Location = New System.Drawing.Point(161, 135)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(97, 19)
         Me.Label7.TabIndex = 19
@@ -157,53 +159,53 @@ Partial Class Pegawai
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(152, 87)
+        Me.TextBox3.Location = New System.Drawing.Point(264, 87)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(189, 22)
         Me.TextBox3.TabIndex = 1
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(152, 110)
+        Me.TextBox4.Location = New System.Drawing.Point(264, 110)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(189, 22)
         Me.TextBox4.TabIndex = 2
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(512, 109)
+        Me.TextBox6.Location = New System.Drawing.Point(565, 109)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(229, 22)
         Me.TextBox6.TabIndex = 5
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(152, 133)
+        Me.TextBox7.Location = New System.Drawing.Point(264, 133)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(189, 22)
         Me.TextBox7.TabIndex = 3
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(512, 86)
+        Me.TextBox8.Location = New System.Drawing.Point(565, 86)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(229, 22)
         Me.TextBox8.TabIndex = 4
         '
         'TextBox9
         '
-        Me.TextBox9.Location = New System.Drawing.Point(152, 156)
+        Me.TextBox9.Location = New System.Drawing.Point(264, 156)
         Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(589, 22)
-        Me.TextBox9.TabIndex = 7
+        Me.TextBox9.Size = New System.Drawing.Size(530, 22)
+        Me.TextBox9.TabIndex = 6
         Me.TextBox9.Tag = ""
         '
         'TextBox10
         '
-        Me.TextBox10.Location = New System.Drawing.Point(512, 132)
+        Me.TextBox10.Location = New System.Drawing.Point(565, 132)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.Size = New System.Drawing.Size(229, 22)
-        Me.TextBox10.TabIndex = 6
+        Me.TextBox10.TabIndex = 7
         '
         'Label8
         '
@@ -211,7 +213,7 @@ Partial Class Pegawai
         Me.Label8.BackColor = System.Drawing.Color.Salmon
         Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label8.Font = New System.Drawing.Font("Script MT Bold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(316, 45)
+        Me.Label8.Location = New System.Drawing.Point(369, 45)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(128, 26)
         Me.Label8.TabIndex = 0
@@ -278,6 +280,16 @@ Partial Class Pegawai
         Me.TextBox11.Size = New System.Drawing.Size(801, 38)
         Me.TextBox11.TabIndex = 20
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(14, 67)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(138, 133)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 22
+        Me.PictureBox2.TabStop = False
+        '
         'TextBox5
         '
         Me.TextBox5.BackColor = System.Drawing.Color.Bisque
@@ -285,10 +297,9 @@ Partial Class Pegawai
         Me.TextBox5.Font = New System.Drawing.Font("Gabriola", 13.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox5.Location = New System.Drawing.Point(49, 0)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(88, 38)
+        Me.TextBox5.Size = New System.Drawing.Size(85, 38)
         Me.TextBox5.TabIndex = 0
         Me.TextBox5.Text = "RedelgiKu"
-        Me.TextBox5.Visible = False
         '
         'Pegawai
         '
@@ -296,6 +307,8 @@ Partial Class Pegawai
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox11)
         Me.Controls.Add(Me.Button4)
@@ -317,7 +330,6 @@ Partial Class Pegawai
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.DataGridView1)
@@ -325,6 +337,7 @@ Partial Class Pegawai
         Me.Text = "Form3"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -354,5 +367,6 @@ Partial Class Pegawai
     Friend WithEvents Button4 As Button
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox11 As TextBox
+    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents TextBox5 As TextBox
 End Class
