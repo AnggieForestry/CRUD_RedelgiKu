@@ -1,4 +1,4 @@
-#Projek Sisdat 1
+.#Projek Sisdat 1
 Judul Aplikasi : Aplikasi RedelgiKu
 
 Kelompok 6
