@@ -93,12 +93,6 @@
     <Compile Include="menutama.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pegawai2.Designer.vb">
-      <DependentUpon>Pegawai2.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Pegawai2.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Pegawai.Designer.vb">
       <DependentUpon>Pegawai.vb</DependentUpon>
     </Compile>
@@ -149,9 +143,6 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Pegawai2.resx">
-      <DependentUpon>Pegawai2.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

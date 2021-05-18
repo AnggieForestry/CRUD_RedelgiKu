@@ -236,7 +236,7 @@ Partial Class Pegawai
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(83, 29)
         Me.Button2.TabIndex = 9
-        Me.Button2.Text = "READ"
+        Me.Button2.Text = "UPDATE"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
@@ -246,7 +246,7 @@ Partial Class Pegawai
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(83, 29)
         Me.Button3.TabIndex = 10
-        Me.Button3.Text = "UPDATE"
+        Me.Button3.Text = "DELETE"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
@@ -256,7 +256,7 @@ Partial Class Pegawai
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(83, 29)
         Me.Button4.TabIndex = 11
-        Me.Button4.Text = "DELETE"
+        Me.Button4.Text = "CLOSE"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'TextBox2

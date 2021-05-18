@@ -172,7 +172,7 @@ Partial Class menutama
         Me.TextBox6.TabIndex = 12
         Me.TextBox6.Text = "Created by Group 7 - B 2020"
         '
-        'Form2
+        'menutama
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -191,7 +191,7 @@ Partial Class menutama
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
-        Me.Name = "Form2"
+        Me.Name = "menutama"
         Me.Text = "RedelgiKu"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
